@@ -84,7 +84,7 @@ No npm install, no build step, no server needed.
 Things to know before you hand it in
 Bookings are not sent to anyone. They are saved in the visitor's own browser (localStorage). Nobody receives them.
 The contact form does not send email. It validates the message and shows a thank-you message, but nothing is stored or emailed.
-The contact details are placeholders — "123 Foodie Lane, Freetown", "+232 76 123 4567", "info@foodie.com", "Mon–Sun 10:00 AM – 10:00 PM". Swap in the real ones before submitting.
+The contact details are placeholders — "123 Foodie Lane, Freetown", "+232 76 123 4567", "ikoroma131@gmail.com", "Mon–Sun 10:00 AM – 10:00 PM". Swap in the real ones before submitting.
 The photos are AI-generated, not photos of a real restaurant. Replace them with your own using the same file names in assets/.
 The header and footer are written inside every page file, so a phone-number change means editing all five files (use Find and Replace, Ctrl+H).
 The fonts come from Google Fonts, so the first page load needs internet. Everything else works offline.
