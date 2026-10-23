@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodie Restaurant | Good Food Brings People Together</title>
+  <meta name="description" content="Fresh, delicious meals and a cozy atmosphere in Freetown. View our menu and book a table.">
+  <meta property="og:title" content="Foodie Restaurant">
+  <meta property="og:description" content="Fresh, delicious meals and a cozy atmosphere in Freetown.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+        Foodie
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <button class="btn btn-primary" data-open-booking>Book a Table</button>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg id="iconOpen" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="iconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" hidden><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="navMobile" hidden>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <button class="btn btn-primary" data-open-booking>Book a Table</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <img src="assets/hero.jpg" alt="Diners enjoying dinner at Foodie restaurant" width="1600" height="912">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Good Food Brings People Together</h1>
+        <p>Experience the best flavors, fresh ingredients and a cozy atmosphere at our restaurant.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="menu.html">View Menu</a>
+          <button class="btn btn-secondary btn-lg" data-open-booking>Book a Table</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Specialties ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-head">Our Specialties</h2>
+        <div class="card-grid">
+
+          <article class="dish-card">
+            <img src="assets/chicken.jpg" alt="Grilled Chicken" loading="lazy" width="944" height="704">
+            <div class="body">
+              <h3>Grilled Chicken</h3>
+              <p>Served with fresh vegetables</p>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <img src="assets/pasta.jpg" alt="Pasta Alfredo" loading="lazy" width="944" height="704">
+            <div class="body">
+              <h3>Pasta Alfredo</h3>
+              <p>Creamy pasta with parmesan</p>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <img src="assets/burger.jpg" alt="Beef Burger" loading="lazy" width="944" height="704">
+            <div class="body">
+              <h3>Beef Burger</h3>
+              <p>Juicy beef with special sauce</p>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <img src="assets/salad.jpg" alt="Caesar Salad" loading="lazy" width="944" height="704">
+            <div class="body">
+              <h3>Caesar Salad</h3>
+              <p>Crispy lettuce with dressing</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-name">Foodie</p>
+        <p class="soft">Good food brings people together.</p>
+      </div>
+      <div class="soft">
+        <p>123 Foodie Lane, Freetown, Sierra Leone</p>
+        <p>+232 76 123 4567 &middot; info@foodie.com</p>
+      </div>
+      <div class="soft">
+        <p>Mon &ndash; Sun: 10:00 AM &ndash; 10:00 PM</p>
+        <p>&copy; <span id="year">2026</span> Foodie Restaurant</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Book a Table popup ===== -->
+  <div class="modal" id="bookingModal" hidden>
+    <div class="modal-backdrop" data-close-booking></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+      <button class="modal-close" data-close-booking aria-label="Close">&times;</button>
+      <h2 class="modal-title" id="bookingTitle">Book a Table</h2>
+      <form class="booking-form" id="bookingForm">
+        <input class="field" name="name" placeholder="Name" required>
+        <input class="field" name="phone" placeholder="Phone Number" required>
+        <input class="field" name="date" type="date" required aria-label="Date">
+        <input class="field" name="time" type="time" min="10:00" max="22:00" required aria-label="Time">
+        <select class="field span-2" name="guests" required aria-label="Number of guests">
+          <option value="" disabled selected>Number of Guests</option>
+          <option value="1">1 guest</option>
+          <option value="2">2 guests</option>
+          <option value="3">3 guests</option>
+          <option value="4">4 guests</option>
+          <option value="5">5 guests</option>
+          <option value="6">6 guests</option>
+          <option value="7">7 guests</option>
+          <option value="8">8 guests</option>
+        </select>
+        <textarea class="field span-2" name="notes" placeholder="Special Requests (Optional)"></textarea>
+        <button class="btn btn-primary btn-lg span-2" type="submit">Reserve Table</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
