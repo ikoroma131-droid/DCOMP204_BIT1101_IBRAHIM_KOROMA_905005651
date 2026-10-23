@@ -91,6 +91,6 @@ The fonts come from Google Fonts, so the first page load needs internet. Everyth
 Files for submission
 Deliverable	File
 Plain HTML version (this one)	foodie-html-website.zip
-React version of the same site	foodie-website.zip (needs npm install then npm run dev)
+React version of the same site	foodie-website (needs npm install then npm run dev)
 Screenshots, GitHub link, A3 design board	still to be added by you
 ﻿# DCOMP204_BIT1101_IBRAHIM_KOROMA_905005651
